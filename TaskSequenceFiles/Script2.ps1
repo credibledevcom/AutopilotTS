@@ -1,14 +1,14 @@
 $Tenant = ""
 $clientid = ""
 $clientSecret = ""
-$grouptag = "TSUpload"
+$grouptag = $args[0]
 $teamsURI = ''
 $alerts = $false
 
 Try{
     $serial = (Get-CimInstance win32_bios).SerialNumber
     Set-Location "$env:ProgramFiles\Scripts\"
-    ./Get-WindowsAutoPilotInfo.ps1 -Online -groupTag $grouptag -TenantId $tenant -AppId $clientid -AppSecret $clientSecret
+    ./Get-WindowsAutoPilotInfo.ps1 -Online -groupTag $grouptag -TenantId $tenant -AppId $clientid -AppSecret $clientSecret -Assign
    
      remove-item  $env:ProgramFiles\Scripts\ -force -Recurse
     if($alerts -eq $true){
