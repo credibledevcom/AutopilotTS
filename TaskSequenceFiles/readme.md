@@ -8,7 +8,8 @@ $Tenant = ""
 $clientid = ""
 $clientSecret = ""
 
-Read more about this process at https://credibledev.com/intune-hardware-hash-import-during-task-sequence
+Read more about this process: https://credibledev.com/intune-hardware-hash-import-during-task-sequence
+YouTube Tutorial on the Process: https://youtu.be/-F1IF9kybbU
 
 Script1 - Copies files needed to target machine
 Script2 - Uses Get-WindowsAutoPilotInfo script to collect and upload hardware hash. Also contains Teams setup which is optional
