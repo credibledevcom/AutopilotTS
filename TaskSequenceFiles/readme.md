@@ -9,6 +9,7 @@ $clientid = ""
 $clientSecret = ""
 
 Read more about this process: https://credibledev.com/intune-hardware-hash-import-during-task-sequence
+
 YouTube Tutorial on the Process: https://youtu.be/-F1IF9kybbU
 
 Script1 - Copies files needed to target machine
